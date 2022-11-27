@@ -43,9 +43,7 @@ describe("Game", () => {
 
     expect(getByText("«Game of life»")).toBeInTheDocument();
     expect(getByTestId("greetingsUser")).toBeInTheDocument();
-    expect(getByTestId("greetingsUser")).toHaveTextContent(
-      "Hello, %user%!"
-    );
+    expect(getByTestId("greetingsUser")).toHaveTextContent("Hello, %user%!");
     expect(getByTestId("l-btn-logout")).toBeInTheDocument();
     expect(getByTestId("board")).toBeInTheDocument();
     expect(getByTestId("settingsGame")).toBeInTheDocument();

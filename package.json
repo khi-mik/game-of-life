@@ -47,12 +47,17 @@
         "height": 768,
         "deviceScaleFactor": 1,
         "mobile": false
+      },
+      "chrome.iphone7": {
+        "skip-stories": "loading|MyFailingComponent",
+        "target": "chrome.app",
+        "preset": "iPhone 7"
       }
     }
   },
   "lint-staged": {
     "*.(ts|tsx)": [
-      "npm run lint:fix"
+      "npm run lint-fix"
     ]
   },
   "devDependencies": {

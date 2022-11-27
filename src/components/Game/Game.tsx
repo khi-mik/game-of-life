@@ -47,23 +47,28 @@ const App = () => {
       <FlexBox gap="1rem">
         <FlexBox alignItems="center" flexDirection="vertical">
           <FlexBox flexDirection="vertical" width="100%">
-            <label data-testid="greetingsUser" style={{ fontSize: "20px" }}>Hello, {name}!</label>
-            <Button onClick={onLogout} mode="secondary" data-testid="l-btn-logout">
+            <label data-testid="greetingsUser" style={{ fontSize: "20px" }}>
+              Hello, {name}!
+            </label>
+            <Button
+              onClick={onLogout}
+              mode="secondary"
+              data-testid="l-btn-logout"
+            >
               Logout
             </Button>
           </FlexBox>
-
         </FlexBox>
         <FlexBox gap="1rem">
-        <Board
-          cellsData={cellsData}
-          onCellClick={changeCellsData}
-          boardSize={settings.boardSize}
-        />
+          <Board
+            cellsData={cellsData}
+            onCellClick={changeCellsData}
+            boardSize={settings.boardSize}
+          />
         </FlexBox>
 
         <FlexBox gap="1rem">
-        <Settings
+          <Settings
             mode={mode}
             settings={settings}
             onPause={onPause}

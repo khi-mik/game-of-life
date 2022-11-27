@@ -54,21 +54,24 @@ const Settings: FC<SettingsPropsType> = memo(
     const onChangeBoardSizeX = useCallback(
       (e: ChangeEvent<HTMLInputElement>) => {
         setBoardSizeX(parseInt(e.target.value, 10)), setChanged(true);
-      }, []
+      },
+      []
     );
 
     const onChangeBoardSizeY = useCallback(
       (e: ChangeEvent<HTMLInputElement>) => {
         setBoardSizeY(parseInt(e.target.value, 10));
         setChanged(true);
-      }, []
+      },
+      []
     );
 
     const onChangeBoardFillPercent = useCallback(
       (e: ChangeEvent<HTMLInputElement>) => {
         setBoardFill(parseInt(e.target.value, 10));
         setChanged(true);
-      }, []
+      },
+      []
     );
 
     const onChangeSpeed = useCallback((e: ChangeEvent<HTMLInputElement>) => {

@@ -33,7 +33,7 @@ cursor: pointer;
 const InputRange: FC<InputRangePropsType> = memo((props) => {
   return (
     <FlexBox alignItems={"center"}>
-      <Input type="range" {...props} ></Input>
+      <Input type="range" {...props}></Input>
       <span>{props.value}</span>
     </FlexBox>
   );
