@@ -2,6 +2,8 @@
 
 ## Проект по курсу «React.js Developer» от OTUS.ru
 
+![«Game of Life»](https://github.com/khi-mik/game-of-life/blob/main/Presentation/OTUS_Game_Of_Life_project.png?raw=true)  
+
 ### Запуск проекта:
 
 установка зависимостей: 'npm i'  
