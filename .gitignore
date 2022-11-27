@@ -29,3 +29,4 @@ dist
 stryker-tmp
 reports
 .next
+.loki
