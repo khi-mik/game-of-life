@@ -50,7 +50,7 @@ describe("Settings", () => {
     expect(getByTestId("s-btn-save")).toBeDisabled();
     expect(getByTestId("s-btn-cancel")).toBeDisabled();
     expect(getByTestId("s-btn-start")).toBeInTheDocument();
-    expect(getByTestId("s-btn-start")).toHaveTextContent(/Старт/);
+    expect(getByTestId("s-btn-start")).toHaveTextContent(/Play/);
     expect(queryByTestId("s-btn-pause")).toBeNull();
     expect(queryByTestId("s-btn-reStart")).toBeNull();
   });

@@ -29,7 +29,7 @@ describe("FormLogin", () => {
     expect(inputUserName).toHaveValue("");
     expect(inputUserName).toHaveAttribute("placeholder", "Input your name");
     expect(getByTestId("l-btn-login")).toBeInTheDocument();
-    expect(getByTestId("l-btn-login")).toHaveTextContent(/Старт/);
+    expect(getByTestId("l-btn-login")).toHaveTextContent(/Click to start Game/);
   });
 
   it("Enter username in textbox and click the Start button", () => {

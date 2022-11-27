@@ -32,9 +32,6 @@ jest.mock("../../localStorage", () => {
 describe("Game", () => {
   it("should buttons work", () => {
     jest.spyOn(appActions, "setSettings");
-    // localStorage.saveLocalAppState.mockResolvedValueOnce(null)
-    // localStorage.loadLocalLogin.mockResolvedValueOnce('%user%')
-    // localStorage.loadLocalAppState.mockResolvedValueOnce(mockData.appState)
 
     const { getByTestId, getByText, queryByTestId } = render(
       <Provider store={store}>
@@ -44,10 +41,10 @@ describe("Game", () => {
       </Provider>
     );
 
-    expect(getByText("Игра «Жизнь»")).toBeInTheDocument();
+    expect(getByText("«Game of life»")).toBeInTheDocument();
     expect(getByTestId("greetingsUser")).toBeInTheDocument();
     expect(getByTestId("greetingsUser")).toHaveTextContent(
-      "Здравствуйте, %user%!"
+      "Hello, %user%!"
     );
     expect(getByTestId("l-btn-logout")).toBeInTheDocument();
     expect(getByTestId("board")).toBeInTheDocument();
