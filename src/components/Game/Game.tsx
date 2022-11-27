@@ -45,8 +45,6 @@ const App = () => {
     <FlexBox alignItems="center" flexDirection="vertical">
       <Header>«Game of life»</Header>
       <FlexBox gap="1rem">
-
-
         <FlexBox alignItems="center" flexDirection="vertical">
           <FlexBox flexDirection="vertical" width="100%">
             <label data-testid="greetingsUser" style={{ fontSize: "20px" }}>Hello, {name}!</label>
